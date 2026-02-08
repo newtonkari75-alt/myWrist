@@ -108,15 +108,16 @@
         .animate-fade-in-up { animation: fadeInUp 0.3s ease-out forwards; }
     </style>
 </head>
-<body class="bg-white text-gray-900 antialiased">
+<body class="bg-gray-100 text-gray-900 antialiased">
 
     <div class="w-full lg:max-w-7xl mx-auto bg-white min-h-screen lg:min-h-0 lg:rounded-2xl lg:shadow-2xl lg:my-8 flex flex-col relative transition-all duration-300">
         
         <div id="home-view" class="flex-1 flex flex-col">
             
-            <div class="sticky top-0 z-50 w-full bg-white shadow-sm lg:rounded-t-2xl overflow-hidden backdrop-blur-md bg-white/95">
+            <!-- STICKY HEADER WITH LIGHT GRAY TINT -->
+            <div class="sticky top-0 z-50 w-full bg-gray-50/95 shadow-sm lg:rounded-t-2xl overflow-hidden backdrop-blur-md">
                 
-                <!-- BARRA DE GARANTIAS (#33AAEB) - Google Ads Trust Signal -->
+                <!-- BARRA DE GARANTIAS (#33AAEB) -->
                 <div class="py-2 px-2 w-full" style="background-color: #33AAEB;">
                     <div class="flex justify-center items-center gap-4 md:gap-8">
                         <div class="flex items-center gap-1.5">
@@ -130,7 +131,7 @@
                     </div>
                 </div>
 
-                <header class="py-3 px-5 md:px-8 bg-white flex justify-between items-center">
+                <header class="py-3 px-5 md:px-8 flex justify-between items-center bg-gray-50/30">
                     <div class="flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
                          <div class="flex items-center gap-2">
                              <img src="images/humehealth-logo.png" alt="Hume Health - Innovative Health Tracking" class="h-6 md:h-8 w-auto">
@@ -142,14 +143,13 @@
                 </header>
             </div>
 
-            <!-- SEO H1 E CONTEÚDO ESTRUTURADO -->
-            <main class="px-5 pt-8 pb-12 lg:px-12 lg:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <!-- MAIN CONTENT AREA WITH SUBTLE GRAY BACKGROUND TO REDUCE BLOOM -->
+            <main class="bg-gray-50/50 px-5 pt-8 pb-12 lg:px-12 lg:py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border-b border-gray-100">
                 
-                <!-- COLUNA ESQUERDA: CAROUSEL (SEO ALT TAGS) -->
+                <!-- COLUNA ESQUERDA: CAROUSEL -->
                 <div class="lg:col-span-6 lg:sticky lg:top-40">
                     <div class="relative group">
-                         <div id="product-carousel" class="js-carousel relative w-full aspect-square overflow-hidden rounded-2xl bg-gray-50 border border-gray-100">
-                            <!-- Alt tags optimizadas com palavras-chave -->
+                         <div id="product-carousel" class="js-carousel relative w-full aspect-square overflow-hidden rounded-2xl bg-white border border-gray-100 shadow-sm">
                             <img src="images/humehealth.png" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain transition-transform duration-700 opacity-100 hover:scale-105" alt="Hume Health Body Pod - Complete Body Composition Scanner">
                             <img src="images/band-hume.png" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain transition-transform duration-700 opacity-0 hover:scale-105" alt="Hume Health Wrist Band - Smart Longevity Tracker">
                             <img src="images/hume-pod.png" class="carousel-slide absolute top-0 left-0 w-full h-full object-contain transition-transform duration-700 opacity-0 hover:scale-105" alt="Hume Body Pod Analysis System">
@@ -167,7 +167,7 @@
                     </div>
                 </div>
 
-                <!-- COLUNA DIREITA: COPYWRITING E KEYWORDS -->
+                <!-- COLUNA DIREITA: COPYWRITING -->
                 <div class="lg:col-span-6 flex flex-col pt-2">
                     <div class="flex items-center gap-2 mb-4">
                         <div class="flex text-black text-sm gap-0.5">
@@ -176,7 +176,6 @@
                         <span class="text-gray-500 font-medium text-xs tracking-wide uppercase" data-i18n="verified_reviews">1.000+ Avaliações Verificadas</span>
                     </div>
 
-                    <!-- H1 ESTRATÉGICO -->
                     <h1 class="text-4xl lg:text-6xl font-black leading-[1.1] text-brand-dark mb-6 tracking-tight" data-i18n="headline">
                         Pare de Adivinhar. <br>Comece a Medir.
                     </h1>
@@ -206,13 +205,12 @@
                         </div>
                     </div>
 
-                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                        <div class="inline-flex items-center gap-2 mb-4 bg-white px-3 py-1 rounded border border-gray-200 text-xs font-bold text-gray-600 uppercase tracking-wider">
+                    <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
+                        <div class="inline-flex items-center gap-2 mb-4 bg-gray-50 px-3 py-1 rounded border border-gray-200 text-xs font-bold text-gray-600 uppercase tracking-wider">
                             <i class="fas fa-tag"></i> <span data-i18n="special_offer">50% DE DESCONTO HOJE</span>
                         </div>
 
                         <div class="flex flex-col gap-3">
-                            <!-- LINK COMPRA PRINCIPAL -->
                             <button onclick="goToOffer('GLOBAL')" class="w-full bg-black text-white text-lg font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-gray-800 hover:shadow-xl transition transform active:scale-95 cursor-pointer flex justify-between items-center group" data-i18n="cta_button_wrap">
                                 <span data-i18n="cta_button">COMPRE AGORA - 50% OFF</span>
                                 <i class="fas fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
@@ -226,7 +224,7 @@
                 </div>
             </main>
 
-            <!-- SEÇÃO WRIST BAND (SEO H2) -->
+            <!-- SEÇÃO WRIST BAND (FUNDO ESCURO MANTIDO) -->
             <section id="wrist-band-section" class="bg-brand-dark py-16 px-5 border-t border-gray-900 relative overflow-hidden">
                 <div class="max-w-6xl mx-auto text-center relative z-10">
                     <div class="inline-block mb-8">
@@ -260,7 +258,6 @@
                                 </div>
                             </div>
                             <div class="text-center lg:text-left">
-                                <!-- LINK BAND -->
                                 <a href="https://www.knownwalk.com/2JCZKZ1X/2266H7JW/" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center bg-white text-brand-dark text-base font-black py-4 px-10 rounded-full hover:bg-gray-200 transition transform active:scale-95 no-underline cursor-pointer tracking-wide gap-3 shadow-[0_0_15px_rgba(255,255,255,0.2)]">
                                     <i class="fas fa-shopping-bag text-lg"></i>
                                     <span data-i18n="band_cta_button">ADICIONAR BAND AO KIT</span>
@@ -271,7 +268,7 @@
                 </div>
             </section>
 
-            <!-- FOOTER: CONFORMIDADE GOOGLE ADS (TRANSPARÊNCIA TOTAL) -->
+            <!-- FOOTER -->
             <footer class="bg-white border-t border-gray-100 pt-16 pb-8 px-5 mt-auto">
                 <div class="max-w-5xl mx-auto flex flex-col items-center">
                     <div class="mb-8 opacity-100">
@@ -282,7 +279,6 @@
                         Authorized Distributor: Global Health Tech Ltd
                     </div>
 
-                    <!-- NAVEGAÇÃO E POLÍTICAS OBRIGATÓRIAS -->
                     <nav class="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-10 text-xs text-gray-500 font-bold uppercase tracking-wider">
                         <button onclick="openModal('privacy')" class="hover:text-black transition">Privacy Policy</button>
                         <button onclick="openModal('terms')" class="hover:text-black transition">Terms of Service</button>
@@ -291,7 +287,6 @@
                         <button onclick="openModal('contact')" class="hover:text-black transition">Contact Support</button>
                     </nav>
                     
-                    <!-- DISCLAIMERS DE CONFORMIDADE ADS -->
                     <div class="max-w-3xl text-center mb-8 px-4 opacity-60">
                         <p class="text-[10px] text-gray-500 leading-normal font-medium mb-4">
                             <strong>Medical Disclaimer:</strong> The **Hume Health Wrist Band** and **Hume Body Pod** are wellness devices. They are not intended to diagnose, treat, cure, or prevent any disease. Always seek the advice of your physician or other qualified health provider.
@@ -308,14 +303,12 @@
             </footer>
         </div>
 
-        <!-- MODAL SISTEMA (POLÍTICAS) -->
         <div id="info-modal" class="fixed inset-0 bg-black bg-opacity-80 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm">
             <div class="bg-white rounded shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col relative animate-fade-in-up">
                 <button onclick="closeModal()" class="absolute top-4 right-4 text-black hover:opacity-50 z-10 p-2">
                     <i class="fas fa-times text-2xl"></i>
                 </button>
                 <div id="modal-content" class="p-8 md:p-12 overflow-y-auto text-gray-800 leading-relaxed text-sm">
-                    <!-- Dinâmico -->
                 </div>
                 <div class="p-4 border-t border-gray-100 bg-gray-50 flex justify-end">
                     <button onclick="closeModal()" class="bg-black text-white px-8 py-3 text-xs font-bold uppercase hover:bg-gray-800 transition tracking-widest">Close</button>
@@ -329,7 +322,6 @@
         const LINK_BAND = "https://www.knownwalk.com/2JCZKZ1X/2266H7JW/";
 
         document.addEventListener('DOMContentLoaded', function() {
-            // Carousel Logic
             const carousels = document.querySelectorAll('.js-carousel');
             carousels.forEach(carousel => {
                 const slides = carousel.querySelectorAll('.carousel-slide');
